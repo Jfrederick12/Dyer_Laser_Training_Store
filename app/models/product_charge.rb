@@ -1,0 +1,2 @@
+class ProductCharge < ApplicationRecord
+end
