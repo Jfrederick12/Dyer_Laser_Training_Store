@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
+import ProductContainer from './ProductContainer';
 import React from 'react';
 
 export default class HelloWorld extends React.Component {
@@ -8,28 +9,40 @@ export default class HelloWorld extends React.Component {
     name: PropTypes.string.isRequired, // this is passed from the Rails view
   };
 
-  /**
-   * @param props - Comes from your rails view.
-   * @param _railsContext - Comes from React on Rails
-   */
   constructor(props, _railsContext) {
     super(props);
 
-    // How to set initial state in ES6 class syntax
-    // https://facebook.github.io/react/docs/reusable-components.html#es6-classes
     this.state = { 
-      name: this.props.name,
-      posts: []
+      products: [
+      {
+        name: 'video one',
+        amount: '100',
+        description: 'this is video one'
+      },
+      {
+        name: 'video two',
+        amount: '50',
+        description: 'this is video two'
+      },
+      {
+        name: 'video three',
+        amount: '150',
+        description: 'this is video three'
+      },            
+    ]
+      // posts: []
     };
+
   }
+
   
-  componentDidMount() {
-    axios.get('/posts.json')
-      .then((response) => {
-        this.setState({ posts: response.data })
-        console.log(this.state.posts)
-      })   
-  }
+  // componentDidMount() {
+  //   axios.get('/posts.json')
+  //     .then((response) => {
+  //       this.setState({ posts: response.data })
+  //       console.log(this.state.posts)
+  //     })   
+  // }
 
   // onToken(token) {
   //   fetch('/charges', {
@@ -42,47 +55,31 @@ export default class HelloWorld extends React.Component {
   //   console.log(JSON.stringify(token))
   // }
 
-  onToken(token) {
-    // fetch('/product_charges', {
-    //   method: 'POST',
-    //   card: JSON.stringify(token),
-    // }).then(token => {
-    //   alert(`We are in business, ${token.email}`);
-    // });
-    console.log(token)
-    console.log(JSON.stringify(token))
-    axios.post('/charges', {
-      card: token.id,
-      amount: 50,
-      description: 'test charge for testing sake'
-    })
-  }      
+  // onToken(token) {
+  //   console.log(token)
+  //   console.log(JSON.stringify(token))
+  //   axios.post('/charges', {
+  //     card: token.id,
+  //     amount: 50,
+  //     description: 'test charge for testing sake'
+  //   })
+  // }      
 
-  newPost() {
-    const post = {name: 'this is a new one'}
-    axios.post('/posts', post)
-      .then((response) => {
-        console.log(response)
-        console.log(data)
-      })
-  }
-
-  updateName = (name) => {
-    this.setState({ name });
-  };
+  // newPost() {
+  //   const post = {name: 'this is a new one'}
+  //   axios.post('/posts', post)
+  //     .then((response) => {
+  //       console.log(response)
+  //       console.log(data)
+  //     })
+  // }
 
   render() {
+    console.log(this.state.products)
     return (
       <div>
-        <StripeCheckout
-          token={this.onToken}
-          stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
-        />
-
-        <button onClick={this.newPost}>make it</button>
-
-        { this.state.posts.map((post) => {
-          return <h1>{post.name}</h1>
+        {this.state.products.map((product) => {
+          return < ProductContainer product={product} />
         })}
 
       </div>
