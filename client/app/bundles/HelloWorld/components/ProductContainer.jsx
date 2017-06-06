@@ -35,17 +35,25 @@ class ProductContainer extends Component {
   }  	
 
 	render() {
+
+
 		return(
-			<div>
-				<iframe width="560" height="315" src={this.state.product.video} frameborder="0" allowfullscreen></iframe>
-        <StripeCheckout
-          token={this.onToken}
-          stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
-        >			
-				</StripeCheckout>
+			<div className="product-content">
+				<h3>{this.state.product.name.dvd}</h3>
+				<p><em>{this.state.product.name.tagline}</em></p>
+				<p>{this.state.product.description}</p>
+				<div className="checkout-button">	
+	        <StripeCheckout
+	          token={this.onToken}
+	          stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
+	        >			
+					</StripeCheckout>
+				</div>
 			</div>
 		)
 	}
 }
+
+// <iframe width="560" height="315" src={this.state.product.video} allowFullScreen></iframe>
 
 export default ProductContainer;

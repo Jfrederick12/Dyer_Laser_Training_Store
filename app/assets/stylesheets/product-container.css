@@ -1,0 +1,16 @@
+.product-content {
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+
+.product-content h3 {
+	color: #252839;
+}
+
+.product-content em {
+	font-size: 20px;
+}
+
+.checkout-button {
+	padding-top: 10px;
+}

@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+.main-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-info {
+	color: white;
+	background: #f2b632;
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-container {
+	background: #f6f1ed;
+	width: 70%;
+	padding: 20px;
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    display: block;
+    width: 100%;
+
+    .product-info {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+
+    .product-container {
+    	width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
