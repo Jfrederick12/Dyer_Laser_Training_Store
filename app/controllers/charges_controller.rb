@@ -10,8 +10,6 @@ class ChargesController < ApplicationController
       format.html
 	    @product_charge = ProductCharge.create(charge_params)
 	    
-	    p @product_charge.card
-
 			customer = Stripe::Customer.create(
 				:email => 'customer@thisthing.net',
 				#stripe token for the card id

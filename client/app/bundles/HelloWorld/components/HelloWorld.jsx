@@ -17,17 +17,20 @@ export default class HelloWorld extends React.Component {
       {
         name: 'video one',
         amount: '100',
-        description: 'this is video one'
+        description: 'this is video one',
+        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },
       {
         name: 'video two',
         amount: '50',
-        description: 'this is video two'
+        description: 'this is video two',
+        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },
       {
         name: 'video three',
         amount: '150',
-        description: 'this is video three'
+        description: 'this is video three',
+        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },            
     ]
       // posts: []
@@ -75,7 +78,6 @@ export default class HelloWorld extends React.Component {
   // }
 
   render() {
-    console.log(this.state.products)
     return (
       <div>
         {this.state.products.map((product) => {

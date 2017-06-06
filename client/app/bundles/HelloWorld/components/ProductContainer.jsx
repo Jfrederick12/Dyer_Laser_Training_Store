@@ -37,7 +37,7 @@ class ProductContainer extends Component {
 	render() {
 		return(
 			<div>
-				{this.state.product.name}
+				<iframe width="560" height="315" src={this.state.product.video} frameborder="0" allowfullscreen></iframe>
         <StripeCheckout
           token={this.onToken}
           stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
