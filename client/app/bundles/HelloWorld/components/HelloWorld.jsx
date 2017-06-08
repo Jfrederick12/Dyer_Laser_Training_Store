@@ -104,7 +104,13 @@ export default class HelloWorld extends React.Component {
     return (
       <div className="main-container">
         <div className="product-info">
-          <h1>Dr Dyers Crazy Lasers are the perfect lasers for every need.</h1>
+          <div className="info-box">
+            <h3>Purchase Your Dental Laser Training Video Today</h3>
+            <p><em>The steps are simple...</em></p>
+            <p>Choose which series would best serve you and your practice</p>
+            <p>Purchase the sereies through our secure checkout system</p>
+            <p>Expect to recieve your video series in 8 to 10 business days.</p>        
+          </div>
         </div>
         <div className="product-container">
           {this.state.products.map((product) => {

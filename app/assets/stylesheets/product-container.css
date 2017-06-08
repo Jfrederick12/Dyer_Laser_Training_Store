@@ -14,9 +14,63 @@
 }
 
 .product-content em {
+	color: #f2b632;
 	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.tagline {
+	border-bottom: 1px solid #f2b632;
+	padding-bottom: 5px;
 }
 
 .checkout-button {
 	padding-top: 10px;
+}
+
+.product-links div {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.video-modal {
+
+}
+
+.video-modal i {
+	margin-left: 24px;
+}
+
+.video-modal a {
+	color: #f2b632;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.video-modal a:hover {
+	color: #677077;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.payment-button {
+	color: #f2b632;
+}
+
+.payment-button i {
+	margin-left: 14px;
+}
+
+.payment-button {
+	color: #f2b632;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.payment-button:hover {
+	color: #677077;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }

@@ -24,8 +24,11 @@ class VideoModal extends Component {
 	render() {
 		const product = this.props.product
 		return(
-			<div>
-				<button onClick={this.open}>demo</button>
+			<div className="video-modal">
+				<a onClick={this.open}>
+				  <i className="fa fa-video-camera fa-2x"></i>
+					<p>Demo Video</p>
+				</a>
 				<Modal show={this.state.showModal} onHide={this.close}>
 				  <Modal.Header closeButton>
             <Modal.Title>{product.name.dvd}</Modal.Title>

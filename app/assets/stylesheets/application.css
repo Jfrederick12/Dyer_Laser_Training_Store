@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .main-container {
 	display: flex;
@@ -23,8 +24,25 @@
 	color: white;
 	background: #f2b632;
   width: 30%;
-  text-align: center;
   padding: 20px;
+}
+
+.info-box {
+	/*border: 1px solid white;*/
+}
+
+.product-info h3 {
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+
+.product-info li {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.product-info p {
+	text-align: left;
 }
 
 .product-container {
