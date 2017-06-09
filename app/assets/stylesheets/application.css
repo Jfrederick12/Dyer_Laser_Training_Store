@@ -15,6 +15,19 @@
  */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+.navbar {
+	/*padding-left: -20%;*/
+}
+
+.banner {
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	z-index: 1000;
+	overflow: auto;
+}
+
 .main-container {
 	display: flex;
 	justify-content: space-between;

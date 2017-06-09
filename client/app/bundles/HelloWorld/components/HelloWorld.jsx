@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
 import ProductContainer from './ProductContainer';
+import Banner from './Banner';
+import NavBar from './NavBar';
 import {Grid, Col, Row} from 'react-bootstrap'
 import React from 'react';
 
@@ -102,20 +104,24 @@ export default class HelloWorld extends React.Component {
 
   render() {
     return (
-      <div className="main-container">
-        <div className="product-info">
-          <div className="info-box">
-            <h3>Purchase Your Dental Laser Training Video Today</h3>
-            <p><em>The steps are simple...</em></p>
-            <p>Choose which series would best serve you and your practice</p>
-            <p>Purchase the sereies through our secure checkout system</p>
-            <p>Expect to recieve your video series in 8 to 10 business days.</p>        
+      <div>
+        < NavBar />
+        < Banner />
+        <div className="main-container">
+          <div className="product-info">
+            <div className="info-box">
+              <h3>Purchase Your Dental Laser Training Video Today</h3>
+              <p><em>The steps are simple...</em></p>
+              <p>Choose which series would best serve you and your practice</p>
+              <p>Purchase the sereies through our secure checkout system</p>
+              <p>Expect to recieve your video series in 8 to 10 business days.</p>        
+            </div>
           </div>
-        </div>
-        <div className="product-container">
-          {this.state.products.map((product) => {
-            return < ProductContainer product={product} />
-          })}
+          <div className="product-container">
+            {this.state.products.map((product) => {
+              return < ProductContainer product={product} />
+            })}
+          </div>
         </div>
       </div>
     );
