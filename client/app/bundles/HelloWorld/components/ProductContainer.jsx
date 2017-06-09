@@ -46,10 +46,10 @@ class ProductContainer extends Component {
 		  		<ul>
 					  {this.state.product.description.map((item) => {
 					  	return (
-					  			<li>
-						  			<i className="fa fa-check fa-2x"></i>
-						  			{item}
-					  			</li>
+				  			<li>
+					  			<i className="fa fa-check fa-2x"></i>
+					  			{item}
+				  			</li>
 				  		)
 					  })}
 		  			<li>
