@@ -3,7 +3,9 @@ import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
 import ProductContainer from './ProductContainer';
 import Banner from './Banner';
-import NavBar from './NavBar';
+import About from './About';
+import { StickyContainer, Sticky } from 'react-sticky';
+// import Navigation from './Navigation';
 import {Grid, Col, Row} from 'react-bootstrap'
 import React from 'react';
 
@@ -58,54 +60,13 @@ export default class HelloWorld extends React.Component {
         video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },         
     ]
-      // posts: []
     };
 
   }
 
-  
-  // componentDidMount() {
-  //   axios.get('/posts.json')
-  //     .then((response) => {
-  //       this.setState({ posts: response.data })
-  //       console.log(this.state.posts)
-  //     })   
-  // }
-
-  // onToken(token) {
-  //   fetch('/charges', {
-  //     method: 'POST',
-  //     card: JSON.stringify(token),
-  //   }).then(token => {
-  //     alert(`We are in business, ${token.email}`);
-  //   });
-  //   console.log(token)
-  //   console.log(JSON.stringify(token))
-  // }
-
-  // onToken(token) {
-  //   console.log(token)
-  //   console.log(JSON.stringify(token))
-  //   axios.post('/charges', {
-  //     card: token.id,
-  //     amount: 50,
-  //     description: 'test charge for testing sake'
-  //   })
-  // }      
-
-  // newPost() {
-  //   const post = {name: 'this is a new one'}
-  //   axios.post('/posts', post)
-  //     .then((response) => {
-  //       console.log(response)
-  //       console.log(data)
-  //     })
-  // }
-
   render() {
     return (
       <div>
-        < NavBar />
         < Banner />
         <div className="main-container">
           <div className="product-info">
@@ -123,6 +84,7 @@ export default class HelloWorld extends React.Component {
             })}
           </div>
         </div>
+        < About />
       </div>
     );
   }

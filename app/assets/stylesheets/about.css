@@ -1,0 +1,34 @@
+.about-container {
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
+	height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.about-container div {
+	font-family: 'Pavanam', sans-serif;
+	color: white;
+	/*background-color: #f2b632;*/
+	width: 30%;
+	font-size: 24px;
+/*	opacity: 0.9;*/
+	padding: 15px 30px 15px 30px;
+	margin: 0px 15px 0px 15px;
+}
+
+.about-container h4 {
+	font-size: 26px;
+	font-family: 'Pavanam', sans-serif;
+	padding-bottom: 5px;
+	color: #f2b632;
+}
+
+.about-container i {
+	padding-right: 10px;
+}

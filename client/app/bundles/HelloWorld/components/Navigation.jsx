@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Nav, NavItem, Navbar } from 'react-bootstrap';
 
-class NavBar extends Component {
+class Navigation extends Component {
 	render() {
 		return(
 		  <Navbar fixedTop fluid className="navbar">
@@ -19,4 +19,4 @@ class NavBar extends Component {
 	}
 }
 
-export default NavBar;
+export default Navigation;

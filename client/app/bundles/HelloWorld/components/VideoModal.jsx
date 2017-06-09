@@ -18,6 +18,7 @@ class VideoModal extends Component {
 
   open() {
   	this.setState({ showModal: true })
+  	console.log('zippy')
   }
 
 
