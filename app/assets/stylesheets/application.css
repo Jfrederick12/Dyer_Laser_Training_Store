@@ -97,9 +97,9 @@
 }
 
 @media (max-width: 400px) {
-  .main-container {
-    display: block;
-    width: 100%;
+		.main-container {
+			display: block;
+		}
 
     .product-info {
       width: 100%;
@@ -110,12 +110,18 @@
     	width: 100%;
       margin: 0 0 10px 0;
     }
-  }
 }
 
 @media (max-width: 850px) {
   .main-container {
 		height: 1600px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .main-container {
+		height: 1800px;
   }
 }
 
