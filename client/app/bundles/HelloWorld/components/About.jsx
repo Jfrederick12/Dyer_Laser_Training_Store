@@ -11,7 +11,7 @@ class About extends Component {
 				</div>
 				<div>
 					<h4>Are Dental Lasers Reliable?</h4>
-					<p><i className="fa fa-quote-left fa-2x"></i>IBecause laser dentistry has only recently become more of a well-established practice, many wonder if lasers garner the same level of results as conventional methods. While using a laser isn’t necessarily always “better” in terms of long-term results, the immediate benefits outweigh many aspects of conventional surgery. The instant outcomes make it all worth the while.
+					<p><i className="fa fa-quote-left fa-2x"></i>Because laser dentistry has only recently become more of a well-established practice, many wonder if lasers garner the same level of results as conventional methods. While using a laser isn’t necessarily always “better” in terms of long-term results, the immediate benefits outweigh many aspects of conventional surgery. The instant outcomes make it all worth the while.
 					</p>
 				</div>
 				<div>

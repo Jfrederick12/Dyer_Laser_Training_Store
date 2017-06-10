@@ -6,7 +6,7 @@ class Banner extends Component {
 		return(
       <div className="banner">
       	<div className="banner-title">
-      		<h1>LASER TRAINING VIDEOS</h1>
+      		<h1>DENTAL LASER TRAINING</h1>
       	</div>
       </div>
 		)
