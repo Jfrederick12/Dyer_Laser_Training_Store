@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
+// import { StickyContainer, Sticky } from 'react-sticky';
 
 class Banner extends Component {
 	render() {
