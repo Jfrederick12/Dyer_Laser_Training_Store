@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import axios from 'axios';
-import StripeCheckout from 'react-stripe-checkout';
+// import axios from 'axios';
+// import StripeCheckout from 'react-stripe-checkout';
 import React, { Component } from 'react';
 import VideoModal from './VideoModal';
 

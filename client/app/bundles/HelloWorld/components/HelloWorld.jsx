@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import axios from 'axios';
-import StripeCheckout from 'react-stripe-checkout';
+// import axios from 'axios';
+// import StripeCheckout from 'react-stripe-checkout';
 import ProductContainer from './ProductContainer';
 import Banner from './Banner';
 import About from './About';
-import { StickyContainer, Sticky } from 'react-sticky';
+// import { StickyContainer, Sticky } from 'react-sticky';
 // import Navigation from './Navigation';
 import {Grid, Col, Row} from 'react-bootstrap'
 import React from 'react';
