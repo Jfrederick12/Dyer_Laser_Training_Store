@@ -4,7 +4,7 @@ import StripeCheckout from 'react-stripe-checkout';
 import ProductContainer from './ProductContainer';
 import Banner from './Banner';
 import About from './About';
-// import { StickyContainer, Sticky } from 'react-sticky';
+import Contact from './Contact';
 // import Navigation from './Navigation';
 import {Grid, Col, Row} from 'react-bootstrap'
 import React from 'react';
@@ -80,25 +80,17 @@ export default class HelloWorld extends React.Component {
           </div>
           <div className="product-container">
             {this.state.products.map((product) => {
-              return < ProductContainer product={product} />
+              return (
+                <div key={product.name.dvd}>
+                  < ProductContainer product={product} />
+                </div>
+              )
             })}
           </div>
         </div>
         < About />
+        < Contact />
       </div>
     );
   }
 }
-
-    // <Grid style={productStyles.gridContainer}>
-    //   <div style={productStyles.mainContainer}>
-    //     <Col style={productStyles.productInfo}md={5}>
-    //       <h1>Dr Dyers Crazy Lasers are the perfect lasers for every need.</h1>
-    //     </Col>
-    //     <Col style={productStyles.productContainer}md={6}>
-    //       {this.state.products.map((product) => {
-    //         return < ProductContainer product={product} />
-    //       })}
-    //     </Col>
-    //   </div>
-    // </Grid>
