@@ -88,6 +88,12 @@
 
 .product-info p {
 	text-align: left;
+	font-family: 'Pavanam', sans-serif;
+	font-size: 20px;	
+}
+
+.product-info em {
+	font-size: 16px;
 }
 
 .product-container {
