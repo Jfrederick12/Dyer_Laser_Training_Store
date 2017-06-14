@@ -1,0 +1,11 @@
+.doctor-container {
+	display: flex;
+	justify-content: space-between;
+	height: 500px;
+	background-color: #252839;
+}
+
+.doctor-container div {
+	width: 50%;
+	padding: 20px;
+}

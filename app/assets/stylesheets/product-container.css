@@ -1,6 +1,5 @@
 .product-content {
 	background-color: white;
-	margin-bottom: 20px;
 }
 
 .product-content:last-child {
@@ -19,7 +18,8 @@
 }
 
 .product-box {
-	padding: 5px 15px 0px 15px;
+	padding: 5px 15px 10px 15px;
+	margin-bottom: 20px;
 }
 
 .product-box li {
