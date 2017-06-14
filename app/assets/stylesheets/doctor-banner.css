@@ -1,11 +1,46 @@
-.doctor-container {
+.doctor-container {	
 	display: flex;
 	justify-content: space-between;
-	height: 500px;
-	background-color: #252839;
+	background-color: #f6f1ed;
 }
 
 .doctor-container div {
+	color: #252839;
 	width: 50%;
 	padding: 20px;
+	font-family: 'Pavanam', sans-serif;
+	font-size: 20px;
+}
+
+.doctor-container div:first-child {
+	background-image: url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/contact-page/app/assets/images/bretportrait.jpg?raw=true");
+	width: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-container h4 {
+	font-size: 26px;
+	font-family: 'Pavanam', sans-serif;
+	padding-bottom: 5px;
+	color: #f2b632;
+}
+
+@media (max-width: 820px) {
+	.doctor-container {
+	  display: block;
+	}
+
+	.doctor-container div {
+		width: 100%;
+	}
+
+	.doctor-container div:first-child {
+		width: 100%;
+		height: 800px;
+	}
 }
