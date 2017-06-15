@@ -15,7 +15,7 @@ class Contact extends Component {
 			  </div>
 			  <div>
 			  	<section className="social-icon">
-			  		<h2>More About Us</h2>
+			  		<h2>Find Us Here</h2>
 						<nav>
 							<a href='https://www.facebook.com/drbretdyer/' className="social-icon"><i className="fa fa-facebook fa-2x"></i></a>
 							<a href='https://plus.google.com/108946516314350079354' className="social-icon"><i className="fa fa-google-plus fa-2x"></i></a>

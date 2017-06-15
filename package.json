@@ -17,8 +17,6 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
-    "react-drawer": "^1.2.5",
-    "react-scrollable-anchor": "^0.4.2",
     "react-scrollchor": "^3.0.0",
     "react-stripe-checkout": "^2.4.0"
   }
