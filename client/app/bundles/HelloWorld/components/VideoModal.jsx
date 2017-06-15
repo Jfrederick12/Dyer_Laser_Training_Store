@@ -27,8 +27,8 @@ class VideoModal extends Component {
 		return(
 			<div className="video-modal">
 				<a onClick={this.open}>
-				  <i className="fa fa-video-camera fa-2x"></i>
-					<p>Demo Video</p>
+				  <i className="fa fa-youtube-play fa-2x"></i>
+					<p>Play Demo</p>
 				</a>
 				<Modal show={this.state.showModal} onHide={this.close}>
 				  <Modal.Header closeButton>

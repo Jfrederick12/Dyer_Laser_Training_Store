@@ -70,7 +70,7 @@ class ProductContainer extends Component {
 			          // zipCode={true}
 			        >			
 			          <a className="payment-button">
-				          <i className="fa fa-credit-card fa-2x"></i>
+				          <i className="fa fa-cc-stripe fa-2x"></i>
 			          	<p>Purchase</p>
 							  </a>
 							</StripeCheckout>
