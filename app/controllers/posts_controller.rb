@@ -21,14 +21,28 @@ class PostsController < ApplicationController
   def edit
   end
 
+  # def create
+  #   # have to refactor this to save the post
+  #   @post = Post.create(post_params)
+
+  #   respond_to do |format|
+  #     format.json
+  #   end
+  # end
+
   def create
     # have to refactor this to save the post
-    @post = Post.create(post_params)
+    @post = Post.create(name: 'ronjon')
 
     respond_to do |format|
       format.json
     end
+    
+    if @post
+      mail(to: 'jfrederickdesign@gmail.com', subject: 'testing the post')
+    end
   end
+
 
   def update
     respond_to do |format|

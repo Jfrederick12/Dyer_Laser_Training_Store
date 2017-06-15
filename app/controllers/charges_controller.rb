@@ -9,16 +9,16 @@ class ChargesController < ApplicationController
     respond_to do |format|
       format.html
 	    @product_charge = ProductCharge.create(charge_params)
-	    
+	    p @product_charge
 			customer = Stripe::Customer.create(
-				:email => 'customer@thisthing.net',
+				:email => @product_charge.email,
 				#stripe token for the card id
 				:card => @product_charge.card
 			)
 
 			charge = Stripe::Charge.create(
 				:customer => customer.id,
-				:amount => @product_charge.amount,
+				:amount => @product_charge.amount.to_i + 1500,
 				:description => @product_charge.description,
 				:currency => 'usd'
 			)
@@ -33,7 +33,7 @@ class ChargesController < ApplicationController
 	private
 
   def charge_params
-    params.require(:charge).permit(:card, :amount, :description)
+    params.require(:charge).permit(:card, :amount, :description, :email)
   end
 
 end

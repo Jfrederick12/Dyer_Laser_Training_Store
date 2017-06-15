@@ -15,22 +15,22 @@ class ProductContainer extends Component {
 	}
 
   onToken(token) {
-    // console.log(token)
+    console.log(token)
     // console.log(JSON.stringify(token))
     this.state.token = (token.id)
 	    axios.post('/charges', {
 	      card: this.state.token,
-	      amount: this.state.product.amount,
-	      description: this.state.product.description
+	      amount: this.state.product.chargeAmount,
+	      description: this.state.product.name.tagline,
+	      email: token.email
 	    }) 
-    // console.log(this.state.token)
   }
 
   postToStripe() {
     axios.post('/charges', {
       card: this.state.token,
-      amount: this.state.product.amount,
-      description: this.state.product.description
+      amount: this.state.product.chargeAmount,
+      description: this.state.product.name.tagline
     })  	
   }
 
@@ -63,9 +63,14 @@ class ProductContainer extends Component {
 			        <StripeCheckout
 			          token={this.onToken}
 			          stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
+			          description={this.state.product.name.dvd}
+			          panelLabel={`Pay $${this.state.product.amount + 15}.00`}
+			          // shippingAddress
+			          // billingAddress={true}
+			          // zipCode={true}
 			        >			
 			          <a className="payment-button">
-				          <i className="fa fa-credit-card fa-2x"></i>
+				          <i className="fa fa-cc-stripe fa-2x"></i>
 			          	<p>Purchase</p>
 							  </a>
 							</StripeCheckout>

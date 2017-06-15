@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class DoctorBanner extends Component {
 	render() {
 		return(
-			<div className="doctor-container">
+			<div id="about" className="doctor-container">
 				<div>
 				</div>
 				<div className="doctor-info">

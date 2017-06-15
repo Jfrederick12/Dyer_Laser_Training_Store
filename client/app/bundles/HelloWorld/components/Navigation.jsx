@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
-import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import Scrollchor from 'react-scrollchor';
 
 class Navigation extends Component {
 	render() {
 		return(
-		  <Navbar fixedTop fluid className="navbar">
-		    <Navbar.Header>
-		      <Navbar.Brand>
-		        <a href="#">Dental Training Videos</a>
-		      </Navbar.Brand>
-		    </Navbar.Header>
-		    <Nav>
-		      <NavItem eventKey={1} href="#">Videos</NavItem>
-		      <NavItem eventKey={2} href="#">About</NavItem>
-		    </Nav>
-		  </Navbar>
-		)
+      <nav className="navigation">
+        <Scrollchor to="#top" animate={{offset: -50, duration: 600}} className="nav-link">Top</Scrollchor>
+        <Scrollchor to="#videos" animate={{offset: -50, duration: 600}} className="nav-link">Videos</Scrollchor>
+        <Scrollchor to="#benefits" animate={{offset: -50, duration: 600}} className="nav-link">Benefits</Scrollchor>
+        <Scrollchor to="#about" animate={{offset: -50, duration: 600}} className="nav-link">About</Scrollchor>
+        <Scrollchor to="#contact" animate={{offset: -50, duration: 600}} className="nav-link">Contact</Scrollchor>
+      </nav>
+	)
 	}
 }
 

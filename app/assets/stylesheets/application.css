@@ -18,10 +18,31 @@
 @import url('https://fonts.googleapis.com/css?family=Pavanam');
 
 
-.navbar {
-	/*padding-left: -20%;*/
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #252839;
 }
 
+.navigation a {
+	text-decoration: none;
+	float: left;
+	display: block;
+	padding: 15px;
+	font-family: 'Pavanam', sans-serif;
+	font-size: 20px;
+	color: white;
+	transition: color 0.5s ease;
+}
+
+.navigation a:hover {
+	  color: #ffd149;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
 
 /*.banner {*/
 /*	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true") no-repeat top center;
@@ -32,6 +53,29 @@
 	/*z-index: 1000;
 	overflow: auto;
 }*/
+
+.navbar {
+	width: 0px;
+}
+
+.navbar i {
+	color: white;
+}
+
+/*#basic-nav-dropdown {
+	background-color: #252839;
+	opacity: 0.8;
+	padding: 20px;
+	position: fixed;
+}
+
+#basic-nav-dropdown:hover {
+	background: white;
+}*/
+
+.dropdown-menu {
+	margin-left: 100px;
+}
 
 .banner {
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
@@ -73,7 +117,7 @@
 }
 
 .info-box {
-	/*border: 1px solid white;*/
+
 }
 
 .product-info h3 {
@@ -88,6 +132,12 @@
 
 .product-info p {
 	text-align: left;
+	font-family: 'Pavanam', sans-serif;
+	font-size: 20px;	
+}
+
+.product-info em {
+	font-size: 16px;
 }
 
 .product-container {
