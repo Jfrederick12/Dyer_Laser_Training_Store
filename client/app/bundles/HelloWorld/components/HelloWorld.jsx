@@ -5,9 +5,11 @@ import ProductContainer from './ProductContainer';
 import Banner from './Banner';
 import About from './About';
 import Contact from './Contact';
-// import Navigation from './Navigation';
-import {Grid, Col, Row} from 'react-bootstrap'
+import Navigation from './Navigation';
+import {Grid, Col, Row, Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 import React from 'react';
+
+
 
 export default class HelloWorld extends React.Component {
   static propTypes = {
@@ -71,6 +73,9 @@ export default class HelloWorld extends React.Component {
   render() {
     return (
       <div>
+
+        < Navigation />
+        <a id="videos"></a>
         < Banner />
         <div className="main-container">
           <div className="product-info">
