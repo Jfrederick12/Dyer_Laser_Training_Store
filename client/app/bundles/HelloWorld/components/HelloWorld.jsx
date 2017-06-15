@@ -6,7 +6,8 @@ import Banner from './Banner';
 import About from './About';
 import Contact from './Contact';
 import Navigation from './Navigation';
-import {Grid, Col, Row, Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
+import {Grid, Col, Row} from 'react-bootstrap'
+// import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import React from 'react';
 
 
@@ -72,12 +73,10 @@ export default class HelloWorld extends React.Component {
 
   render() {
     return (
-      <div>
-
+      <div id="top">
         < Navigation />
-        <a id="videos"></a>
         < Banner />
-        <div className="main-container">
+        <div id="videos" className="main-container">
           <div className="product-info">
             <div className="info-box">
               <h3>Purchase Your Dental Laser Training Video Today</h3>

@@ -4,7 +4,7 @@ import DoctorBanner from './DoctorBanner';
 class About extends Component {
 	render() {
 		return(
-			<div>
+			<div id="benefits">
 				<div className="about-container">
 					<div>
 						<h4>The Benefits of Laser Dentistry</h4>
