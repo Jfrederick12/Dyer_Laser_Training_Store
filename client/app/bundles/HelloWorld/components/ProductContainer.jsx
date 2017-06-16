@@ -39,7 +39,7 @@ class ProductContainer extends Component {
 			<div className="product-content">
 				<div className="product-header">
 					<span className="tagline">{this.state.product.name.dvd + ' ' + this.state.product.name.tagline}</span>
-					<span><em>{`Cost: $${this.state.product.amount}.00`}</em></span>
+					<span><em>{`$${this.state.product.amount}.00`}</em></span>
 				</div>
 				<div className="product-box">
 		  		<ul>

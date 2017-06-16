@@ -23,17 +23,19 @@ export default class HelloWorld extends React.Component {
     this.state = { 
       products: [
       {
+        id: 0,
         name: {
           dvd: 'DVD 1',
           tagline: 'Periodontal Laser Therapy'
         },
         description: ['Biologic basis for using diode lasers in periodontal therapy', 'Leveraging lasers for dental implants', 'Also accommodates orthodontic, restorative, and endodontic treatments, as well as oral surgery procedures and wound healing'],
-        tagline: 'Would you be interested to learn that you could predictably improve the pocket depths of your patients and never have to administer numbing shots? In dentistry, we’re always searching for new ways to provide the utmost comfort and reassurance to our patients who fear visiting the dentist. Knowing that shots won’t be necessary is one way to provide peace of mind to your patients.',
+        tagline: '',
         chargeAmount: 20000,
         amount: 200,
         video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },
       {
+        id: 1,
         name: {
           dvd: 'DVD 2',
           tagline: 'Low Level Laser Therapy'
@@ -41,10 +43,11 @@ export default class HelloWorld extends React.Component {
         chargeAmount: 20000,
         amount: 200,
         description: ['Reduce pain and swelling', 'Analgesia and wound healing', 'Maintain dental implant health, and treat infections'],
-        tagline: 'Low-level laser therapy may be the most important laser adjunct to your dental practice. Using this technology makes it possible to reduce pain and swelling in a surgery site and in yours patient’s TMJ.',
+        tagline: '',
         video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },
       {
+        id: 2,
         name: {
           dvd: 'DVD 3',
           tagline: 'Laser Crown Lengthening and Lip Lowering Surgery'
@@ -52,20 +55,33 @@ export default class HelloWorld extends React.Component {
         chargeAmount: 20000,
         amount: 200,
         description: ['Cosmetic contouring of bone and soft tissue', 'Improve symmetry around new crowns and veneers', 'Lip lowering surgery'],
-        tagline: 'Dr. Dyer literally wrote the paper on how to use the erbium laser for cosmetic contouring of the bone and soft tissue around teeth.Do you need to improve the appearance of a patient with a high lip line? How about symmetry around your new crowns and veneers?',
+        tagline: '',
         video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
       },    
       {
+        id: 3,
         name: {
           dvd: 'DVD 4',
           tagline: 'Periodontal Laser Therapy'
         },
-        chargeAmount: 20000,
-        amount: 200,
+        chargeAmount: 25000,
+        amount: 250,
         description: ['Laser new attachment procedure', 'Laser guided tissue regeneration'],
-        tagline: 'Dr. Dyer literally wrote the paper on how to use the erbium laser for cosmetic contouring of the bone and soft tissue around teeth.Do you need to improve the appearance of a patient with a high lip line? How about symmetry around your new crowns and veneers?',
+        tagline: '',
         video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
-      },         
+      }, 
+      {
+        id: 4,
+        name: {
+          dvd: "",
+          tagline: 'Complete Video Series (Save $100)'
+        },
+        chargeAmount: 75000,
+        amount: 750,
+        description: ['DVD 1, Periodontal Laser Therapy', 'DVD 2, Low Level Laser Therapy', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Laser Therapy'],
+        tagline: 'last-dvd',
+        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+      }        
     ]
     };
 
@@ -80,7 +96,7 @@ export default class HelloWorld extends React.Component {
           <div className="product-info">
             <div className="info-box">
               <h3>Purchase Your Dental Laser Training Video Today</h3>
-              <p><em>The steps are simple...</em></p>
+              <p>The steps are simple...</p>
               <p>Choose which series would best serve you and your practice</p>
               <p>Purchase the series through our secure checkout system</p>
               <p>Expect to recieve your video series in 8 to 10 business days.</p>
@@ -90,7 +106,7 @@ export default class HelloWorld extends React.Component {
           <div className="product-container">
             {this.state.products.map((product) => {
               return (
-                <div key={product.name.dvd}>
+                <div id={product.tagline} key={product.id}>
                   < ProductContainer product={product} />
                 </div>
               )

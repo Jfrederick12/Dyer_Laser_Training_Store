@@ -1,6 +1,6 @@
 .about-container {
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
-	height: 700px;
+	/*height: 700px;*/
   background-attachment: fixed;
   /*background-position: center;*/
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 	font-size: 24px;
 /*	opacity: 0.9;*/
 	padding: 15px 30px 15px 30px;
-	margin: 0px 15px 0px 15px;
+	margin: 0px 15px 20px 15px;
 }
 
 .about-container h4 {
@@ -37,7 +37,6 @@
 
 @media (max-width: 1150px) {
   .about-container {
-		height: 1000px;
 		background-position: center;
   }
 }
