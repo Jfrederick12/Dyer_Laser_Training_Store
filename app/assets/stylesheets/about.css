@@ -11,8 +11,6 @@
   padding-top: 50px;
 }
 
-
-
 .about-container div {
 	font-family: 'Pavanam', sans-serif;
 	color: white;
@@ -64,4 +62,10 @@
 	.about-container div {
 		font-size: 18px;
 	}
+}
+
+@media only screen and (max-width: 667px) {
+  .about-container {
+ 		height: 300px;
+  }
 }
