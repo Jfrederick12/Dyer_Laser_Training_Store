@@ -38,13 +38,19 @@
 }
 
 .navigation a:hover {
-	  color: #ffd149;
-    text-decoration: none;
-    transition: color 0.5s ease;
+	color: #ffd149;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .navigation i:first-child{
 	padding-left: 15px;
+}
+
+@media (max-width: 425px) {
+	.navigation a {
+		font-size: 14px;
+	}
 }
 
 .dropdown-menu {
@@ -63,12 +69,21 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 375px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+	.banner {
+		background-size: 100%;
+		/*width: 50%;*/
+	}
+}
+
+/*@media screen and (max-width: 375px) {
   	.banner {
       background-size: cover;
       height: 600px;
     }
-  }
+  }*/
 
 .banner-title {
 	background-color: white;
