@@ -54,10 +54,8 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
-					  <div className="product-button">
-							< VideoModal product={this.state.product} />
-						</div>
-						<div className="product-button">
+						< VideoModal product={this.state.product} />
+
 						<div className="checkout-button">	
 			        <StripeCheckout
 			          token={this.onToken}
@@ -69,10 +67,10 @@ class ProductContainer extends Component {
 			          zipCode={true}
 			        >			
 			          <a className="payment-button">
+				          <i className="fa fa-cc-stripe fa-2x"></i>
 			          	<p>Purchase</p>
 							  </a>
 							</StripeCheckout>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -85,5 +83,3 @@ class ProductContainer extends Component {
 
 
 export default ProductContainer;
-
-// <i className="fa fa-cc-stripe fa-2x"></i>
