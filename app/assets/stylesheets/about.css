@@ -2,7 +2,7 @@
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
 	height: 700px;
   background-attachment: fixed;
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -10,6 +10,7 @@
   justify-content: center;
   padding-top: 50px;
 }
+
 
 
 .about-container div {
@@ -37,6 +38,7 @@
 @media (max-width: 1150px) {
   .about-container {
 		height: 1000px;
+		background-position: center;
   }
 }
 
