@@ -38,7 +38,8 @@ class ProductContainer extends Component {
 		return(
 			<div className="product-content">
 				<div className="product-header">
-					<p className="tagline">{this.state.product.name.tagline}</p>
+					<span className="tagline">{this.state.product.name.dvd + ' ' + this.state.product.name.tagline}</span>
+					<span><em>{`$${this.state.product.amount}.00`}</em></span>
 				</div>
 				<div className="product-box">
 		  		<ul>
@@ -50,10 +51,6 @@ class ProductContainer extends Component {
 				  			</li>
 				  		)
 					  })}
-		  			<li>
-			  			<i className="fa fa-money fa-2x"></i>
-			  			{`$${this.state.product.amount}.00`}
-		  			</li>
 	  			</ul>
 
 					<div className="product-links">
@@ -65,9 +62,9 @@ class ProductContainer extends Component {
 			          stripeKey="pk_test_rpoW1XqBjFA2qFKKh2RgCPH1"
 			          description={this.state.product.name.dvd}
 			          panelLabel={`Pay $${this.state.product.amount + 15}.00`}
-			          // shippingAddress
-			          // billingAddress={true}
-			          // zipCode={true}
+			          shippingAddress
+			          billingAddress={true}
+			          zipCode={true}
 			        >			
 			          <a className="payment-button">
 				          <i className="fa fa-cc-stripe fa-2x"></i>

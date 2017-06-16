@@ -17,7 +17,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pavanam');
 
-
 .navigation {
   position: fixed;
   top: 0;
@@ -44,34 +43,9 @@
     transition: color 0.5s ease;
 }
 
-/*.banner {*/
-/*	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true") no-repeat top center;
-	background-size: cover;
-	position: fixed;
-	height: 200px;
-	width: 100%;*/
-	/*z-index: 1000;
-	overflow: auto;
-}*/
-
-.navbar {
-	width: 0px;
+.navigation i:first-child{
+	padding-left: 15px;
 }
-
-.navbar i {
-	color: white;
-}
-
-/*#basic-nav-dropdown {
-	background-color: #252839;
-	opacity: 0.8;
-	padding: 20px;
-	position: fixed;
-}
-
-#basic-nav-dropdown:hover {
-	background: white;
-}*/
 
 .dropdown-menu {
 	margin-left: 100px;
@@ -81,7 +55,7 @@
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true");
 	height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+/*  background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -103,10 +77,17 @@
 	padding-bottom: 5px;
 }
 
+@media (max-width: 1200px) {
+	.banner {
+		background-position: center;
+	}
+}
+
 .main-container {
+	font-family: 'Pavanam', sans-serif;
 	display: flex;
 	justify-content: space-between;
-	height: 1500px;
+
 }
 
 .product-info {
@@ -137,6 +118,7 @@
 }
 
 .product-info em {
+	color: #252839;
 	font-size: 16px;
 }
 
@@ -162,16 +144,4 @@
     }
 }
 
-@media (max-width: 850px) {
-  .main-container {
-		height: 1600px;
-  }
-}
-
-
-@media (max-width: 650px) {
-  .main-container {
-		height: 1800px;
-  }
-}
 

@@ -7,7 +7,7 @@ class DoctorBanner extends Component {
 				<div>
 				</div>
 				<div className="doctor-info">
-					<h4>About Dr. Dyer</h4>
+					<h4><i className="fa fa-user-md fa-2x"></i> About Dr. Dyer</h4>
 					<p>
 					  Dr. Dyer received his DDS degree from Baylor College of Dentistry and earned a Master of Science in Periodontics at the University of Texas Dental School in Houston. He has been striving to develop and master the most effective periodontal procedures for his patients since opening his private practice in 1991.
 					</p>

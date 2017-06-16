@@ -22,7 +22,7 @@ class Contact extends Component {
 							<a href='https://www.yelp.com/biz/bret-l-dyer-dds-ms-sugar-land' className="social-icon"><i className="fa fa-yelp fa-2x"></i></a>
 						</nav>
 						<nav className="site-link">
-							<a href='https://http://www.drbretdyer.com/'>www.drbretdyer.com</a>
+							<a href='http://www.drbretdyer.com/'>www.drbretdyer.com</a>
 						</nav>
 					</section>
 			  </div>
