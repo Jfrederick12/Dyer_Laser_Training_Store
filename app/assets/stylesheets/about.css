@@ -63,9 +63,3 @@
 		font-size: 18px;
 	}
 }
-
-@media only screen and (max-width: 667px) {
-  .about-container {
- 		height: 300px;
-  }
-}
