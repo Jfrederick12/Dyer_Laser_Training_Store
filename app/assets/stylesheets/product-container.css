@@ -109,6 +109,10 @@
 and (min-device-width : 375px) 
 and (max-device-width : 750px) { 
 
+	.product-header {
+		margin-bottom: 40px;
+	}
+
   .product-header span {
   	font-size: 50px;
   }
@@ -118,11 +122,13 @@ and (max-device-width : 750px) {
   }
 
   .product-box li{
+  	padding-top: 20px;
+  	padding-bottom: 20px;
   	font-size: 50px;
   }
 
   .product-box {
-  	margin-bottom: -10px;
+  	margin-bottom: 50px;
   }
 
   .product-links {
