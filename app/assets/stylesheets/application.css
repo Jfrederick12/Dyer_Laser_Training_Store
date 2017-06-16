@@ -71,10 +71,11 @@
 
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
+and (max-device-width : 750px) { 
 	.banner {
 	  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbannermobile.jpg?raw=true");
 		background-size: 100%;
+		height: 1330px;
 	}
 
 	.navigation a {
