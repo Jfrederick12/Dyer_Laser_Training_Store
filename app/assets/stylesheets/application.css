@@ -63,6 +63,12 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  	.banner {
+      width: 20%;
+    }
+  }
+
 .banner-title {
 	background-color: white;
 	font-family: 'Pavanam', sans-serif;
@@ -144,11 +150,6 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  	.banner {
-      background: url(https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbanner.jpg?raw=true) 17% no-repeat;
-      background-size: cover;
-    }
-  }
+
 
 
