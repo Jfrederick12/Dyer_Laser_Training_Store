@@ -145,6 +145,14 @@ and (max-device-width : 750px) {
 		height: 1400px;
 	}
 
+	.banner-title {
+		width: 60%;
+	}
+
+	.banner-title h1 {
+		font-size: 60px;
+	}
+
 	.navigation a {
 		font-size: 50px;
 		padding-left: 30px;
@@ -189,6 +197,14 @@ and (max-device-width : 570px) {
 	  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/master/app/assets/images/dyerbannermobile.jpg?raw=true");
 		background-size: cover;
 		height: 1400px;
+	}
+
+	.banner-title {
+		width: 60%;
+	}
+
+	.banner-title h1 {
+		font-size: 60px;
 	}
 
 	.navigation a {

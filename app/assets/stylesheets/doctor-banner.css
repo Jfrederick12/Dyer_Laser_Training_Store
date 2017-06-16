@@ -88,3 +88,30 @@
 		font-size: 60px;
 	}
 }
+
+/*iPhone5*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 570px) { 
+	.doctor-container {
+		display: block;
+	}
+
+	.doctor-container div:first-child {
+		background-image: url("https://github.com/Jfrederick12/Dyer_Laser_Training_Store/blob/contact-page/app/assets/images/bretportrait.jpg?raw=true");
+		width: 100%;
+		height: 1000px;
+	}
+
+	.doctor-container div {
+		width: 100%;
+	}
+
+	.doctor-container p {
+		padding: 20px;
+		font-size: 40px;
+	}
+
+	.doctor-container h4 {
+		padding: 20px;
+		font-size: 60px;
+	}
+}
