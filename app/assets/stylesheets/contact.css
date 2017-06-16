@@ -73,7 +73,7 @@ section nav p {
 }
 
 /*iPhone6*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 750px) { 
+/*@media only screen and (min-device-width : 375px) and (max-device-width : 750px) { 
 	.contact-container {
 		display: block;
 		height: 70vh;
@@ -98,7 +98,7 @@ section nav p {
 		padding-left: 10px;
 		font-size: 40px;
 	}
-}
+}*/
 /*section i {
 	padding-left: 50px;
 	text-align: center;
