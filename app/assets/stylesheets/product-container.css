@@ -103,3 +103,39 @@
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
+
+/*iPhone6 +*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 750px) { 
+
+  .product-header span {
+  	font-size: 50px;
+  }
+
+  .product-header em {
+  	font-size: 40px;
+  }
+
+  .product-box li{
+  	font-size: 50px;
+  }
+
+  .product-box {
+  	margin-bottom: -10px;
+  }
+
+  .product-links {
+  	font-size: 40px;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  }
+
+  .payment-button i {
+  	padding-left: 15px;
+  }
+
+  .video-modal i {
+  	padding-left: 15px;
+  }
+}
