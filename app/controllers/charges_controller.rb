@@ -1,7 +1,6 @@
 class ChargesController < ApplicationController
-# PUBLISHABLE_KEY=pk_test_rpoW1XqBjFA2qFKKh2RgCPH1 SECRET_KEY=sk_test_OPZtoZKSucpvXWBMY6aHjAcH foreman start -f Procfile.dev
-
 	skip_before_filter  :verify_authenticity_token
+	
 	def new
 	end
 
