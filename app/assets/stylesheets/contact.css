@@ -99,6 +99,33 @@ section nav p {
 		font-size: 40px;
 	}
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 570px) { 
+	.contact-container {
+		display: block;
+		height: 70vh;
+	}
+
+	.contact-container div {
+		width: 100%;
+	}
+
+	.contact-container p {
+		padding: 20px;
+		font-size: 40px;
+	}
+
+	.contact-container h2 {
+		padding: 20px;
+		font-size: 60px;
+		border: none;
+	}
+
+	.contact-container a {
+		padding-left: 10px;
+		font-size: 40px;
+	}
+}
 /*section i {
 	padding-left: 50px;
 	text-align: center;
