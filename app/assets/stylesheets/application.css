@@ -63,9 +63,10 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (max-width: 375px) {
   	.banner {
-      width: 20%;
+      background-size: cover;
+      height: 600px;
     }
   }
 
@@ -133,6 +134,22 @@
 	width: 70%;
 	padding: 20px;
 }
+
+/*@media screen and (min-width: 375px) and (max-width: 667px) {
+	.main-container {
+		display: block;
+	}
+
+  .product-info {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .product-container {
+  	width: 100%;
+    margin: 0 0 10px 0;
+  }
+}*/
 
 @media (max-width: 400px) {
 		.main-container {
