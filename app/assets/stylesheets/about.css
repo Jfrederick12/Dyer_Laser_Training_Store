@@ -67,10 +67,11 @@
 @media only screen and (min-device-width : 375px) and (max-device-width : 750px) { 
 	.about-container {
 		display: block;
+		margin-bottom: -20px;
 	}
 
 	.about-container div {
-		width: 100%;
+		width: 98%;
 		font-size: 50px;
 	}
 
