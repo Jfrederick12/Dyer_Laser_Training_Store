@@ -1,4 +1,5 @@
 .product-content {
+	font-family: 'Pavanam', sans-serif;
 	background-color: white;
 }
 
@@ -7,18 +8,24 @@
 	margin-bottom: 0px;
 }
 
-.product-header p {
+.product-header span {
 	color: white;
 	font-size: 20px;
-	padding: 10px 0px 10px 15px;
+	padding: 20px 20px 10px 15px;
+}
+
+.product-header span:last-child {
+	color: #f2b632;
+	font-size: 16px;
 }
 
 .product-header {
-	background-color: #677077;
+	background-color: #252839;
+	padding: 10px;
 }
 
 .product-box {
-	padding: 5px 15px 10px 15px;
+	padding: 15px 15px 10px 15px;
 	margin-bottom: 20px;
 }
 
@@ -33,7 +40,6 @@
 }
 
 .product-box li:last-child {
-	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
@@ -54,12 +60,13 @@
 }
 
 .product-links div {
+	padding-left: 15px;
 	display: inline-block;
 	padding-right: 20px;
 }
 
 .video-modal i {
-	margin-left: 22px;
+	margin-left: 17px;
 }
 
 .video-modal a {
@@ -80,7 +87,7 @@
 }
 
 .payment-button i {
-	margin-left: 10px;
+	margin-left: 9px;
 }
 
 .payment-button {
