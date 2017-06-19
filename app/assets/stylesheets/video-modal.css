@@ -2,27 +2,6 @@
 	margin-top: 20%;
 }
 
-.backdrop-style {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.3);
-	padding: 50px;
-}
-
-.modal-style {
-	    background-color: #fff;
-      border-radius: 5px;
-      top: 15%;
-      max-width: 80%;
-      min-height: 300px;
-      max-height: 500px;
-      margin: 0 auto;
-      padding: 30px;
-}
-
 /*iPhone6 +*/
 @media only screen 
 and (min-device-width : 375px) 

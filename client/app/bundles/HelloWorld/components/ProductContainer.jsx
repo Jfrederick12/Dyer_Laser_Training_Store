@@ -59,8 +59,11 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
-						<button onClick={this.toggleModal.bind(this)}>
-						</button>
+
+						<a className="video-button" onClick={this.toggleModal.bind(this)}>
+						  <i className="fa fa-youtube-play fa-2x"></i>
+							<p>Play Demo</p>
+						</a>
 						<VideoModal show={this.state.isOpen} 
 							onClose={this.toggleModal.bind(this)} 
 						/>
