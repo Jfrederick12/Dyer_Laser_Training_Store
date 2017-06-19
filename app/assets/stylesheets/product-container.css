@@ -156,4 +156,13 @@ and (max-device-width : 750px) {
   .video-modal i {
   	padding-left: 15px;
   }
+
+  .fa-youtube-play {
+  	padding-left: 20px;
+  }
+
+  .video-button {
+  	margin-left: 10px;
+  }
+
 }

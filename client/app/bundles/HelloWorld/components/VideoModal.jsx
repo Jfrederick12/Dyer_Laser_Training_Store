@@ -38,7 +38,7 @@ class VideoModal extends Component {
     };
 
     const modalStyle = {
-      backgroundColor: '#fff',
+      backgroundColor: 'transparent',
       borderRadius: 5,
       top: '15%',
       maxWidth: '80%',
@@ -51,6 +51,11 @@ class VideoModal extends Component {
     return (
       <div className="backdrop" style={backdropStyle}>
         <div className="modal" style={modalStyle}>
+      	<div className="header">
+	        <button onClick={this.props.onClose}>
+	          <i className="fa fa-times fa-2x"></i>
+	        </button>
+        </div>
           {this.props.children}
           <YoutubePlayer
 					    videoId='K-hfJkLqMLg'
@@ -61,12 +66,6 @@ class VideoModal extends Component {
 					        }
 					    }
 					/>
-
-          <div className="footer">
-            <button onClick={this.props.onClose}>
-              Close
-            </button>
-          </div>
         </div>
       </div>
     );    		
