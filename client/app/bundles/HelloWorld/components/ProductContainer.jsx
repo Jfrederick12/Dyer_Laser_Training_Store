@@ -64,7 +64,7 @@ class ProductContainer extends Component {
 						  <i className="fa fa-youtube-play fa-2x"></i>
 							<p>Play Demo</p>
 						</a>
-						<VideoModal show={this.state.isOpen} 
+						<VideoModal product={this.state.product} show={this.state.isOpen} 
 							onClose={this.toggleModal.bind(this)} 
 						/>
 

@@ -7,7 +7,6 @@ import About from './About';
 import Contact from './Contact';
 import Navigation from './Navigation';
 import {Grid, Col, Row} from 'react-bootstrap'
-// import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import React from 'react';
 
 
@@ -32,7 +31,7 @@ export default class HelloWorld extends React.Component {
         tagline: '',
         chargeAmount: 9900,
         amount: 99,
-        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+        video: 'K-hfJkLqMLg'
       },
       {
         id: 1,
@@ -44,7 +43,7 @@ export default class HelloWorld extends React.Component {
         amount: 99,
         description: ['Reduce pain and swelling', 'Analgesia and wound healing', 'Maintain dental implant health, and treat infections'],
         tagline: '',
-        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+        video: 'ODOZRNPhVUY'
       },
       {
         id: 2,
@@ -56,7 +55,7 @@ export default class HelloWorld extends React.Component {
         amount: 99,
         description: ['Cosmetic contouring of bone and soft tissue', 'Improve symmetry around new crowns and veneers', 'Lip lowering surgery'],
         tagline: '',
-        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+        video: 'HqbMkFG04IU'
       },    
       {
         id: 3,
@@ -68,7 +67,7 @@ export default class HelloWorld extends React.Component {
         amount: 149,
         description: ['Laser new attachment procedure', 'Laser guided tissue regeneration'],
         tagline: '',
-        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+        video: 'HqbMkFG04IU'
       }, 
       {
         id: 4,
@@ -80,7 +79,7 @@ export default class HelloWorld extends React.Component {
         amount: 350,
         description: ['DVD 1, Periodontal Laser Therapy', 'DVD 2, Low Level Laser Therapy', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Laser Therapy'],
         tagline: 'last-dvd',
-        video: 'https://www.youtube.com/embed/K-hfJkLqMLg'
+        video: 'K-hfJkLqMLg'
       }        
     ]
     };

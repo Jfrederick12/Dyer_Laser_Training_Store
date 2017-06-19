@@ -58,11 +58,11 @@ class VideoModal extends Component {
         </div>
           {this.props.children}
           <YoutubePlayer
-					    videoId='K-hfJkLqMLg'
+					    videoId={this.props.product.video}
 					    playbackState='unstarted'
 					    configuration={
 					        {
-
+					        	controls: 0
 					        }
 					    }
 					/>
