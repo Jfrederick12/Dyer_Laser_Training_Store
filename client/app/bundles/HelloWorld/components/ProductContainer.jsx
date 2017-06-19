@@ -9,7 +9,8 @@ class ProductContainer extends Component {
 		super(props);
 		this.state = {
 			product: this.props.product,
-			token: ''
+			token: '',
+			isOpen: false
 		}
 		this.onToken = this.onToken.bind(this)
 	}
@@ -34,6 +35,10 @@ class ProductContainer extends Component {
     })  	
   }
 
+  toggleModal() {
+  	this.setState({ isOpen: !this.state.isOpen})
+  }
+
 	render() {
 		return(
 			<div className="product-content">
@@ -54,7 +59,11 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
-						< VideoModal product={this.state.product} />
+						<button onClick={this.toggleModal.bind(this)}>
+						</button>
+						<VideoModal show={this.state.isOpen} 
+							onClose={this.toggleModal.bind(this)} 
+						/>
 
 						<div className="checkout-button">	
 			        <StripeCheckout

@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
 	skip_before_filter  :verify_authenticity_token
-	
+
 	def new
 	end
 
@@ -19,8 +19,11 @@ class ChargesController < ApplicationController
 				:customer => customer.id,
 				:amount => @product_charge.amount.to_i + 1500,
 				:description => @product_charge.description,
-				:currency => 'usd'
+				:currency => 'usd',
+				:receipt_email => @product_charge.email
 			)
+
+			p charge
 
 			redirect_to '/'  		
     end
