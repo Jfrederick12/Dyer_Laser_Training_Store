@@ -26,8 +26,7 @@ class ProductContainer extends Component {
 	      email: token.email
 	    }) 
 	    .then((response) => {
-	    	console.log(response);
-	    	this.setState({ isOpen: !this.state.isOpen})
+	    	this.setState({ paymentModalOpen: !this.state.paymentModalOpen})
     })
   }
 
@@ -37,9 +36,6 @@ class ProductContainer extends Component {
       amount: this.state.product.chargeAmount,
       description: this.state.product.name.tagline
     })  
-    .then((response) => {
-    	console.log(response);
-    })	
   }
 
   toggleModal() {
@@ -81,8 +77,8 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
-						<button onClick={this.togglePaymentModal.bind(this)}>button</button>
-						<PaymentModal show={this.state.paymentModalOpen}
+
+						<PaymentModal product={this.state.product} show={this.state.paymentModalOpen}
 							onClose={this.togglePaymentModal.bind(this)}
 						/>
 

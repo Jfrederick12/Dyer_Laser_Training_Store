@@ -40,8 +40,29 @@
 .payment-modal {
 	width: 100%;
 	background-color: white;
-	margin-top: 25%;
+	margin-top: 10%;
 	align-self: flex-start;
-	border-radius: 5;
-	padding: 30px;
+	border-radius: 5px;
+	padding: 10px;
 }
+
+.payment-modal h3 {
+	border-bottom: 1px solid black;
+}
+
+.payment-header {
+	position: relative;
+	margin-left: 90%;
+}
+
+.payment-modal p {
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.payment-modal h4:last-child {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+

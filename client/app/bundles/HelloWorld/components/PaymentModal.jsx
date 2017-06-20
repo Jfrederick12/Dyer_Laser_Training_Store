@@ -40,19 +40,21 @@ class PaymentModal extends Component {
       borderRadius: 5,
       top: 200,
       marginTop: '20%',
-      minHeight: 300,
       margin: '0 auto',
-      padding: 30
     };        		
 		
     return (
       <div className="modalbg" style={backdropStyle}>
         <div className="payment-modal">
-          <button onClick={this.props.onClose}>
-            <i className="fa fa-times fa-2x"></i>
-          </button>
-          <h3>Thanks for your payment!</h3>
+          <h3>Payment Details</h3>
+          <h4>{`Name: ${this.props.product.name.tagline}`}</h4>
+          <h4>{`Item Cost: $${this.props.product.amount}.00`}</h4>
+          <h4>Shipping: $15.00</h4>
+          <h4>{`Total: $${this.props.product.amount + 15}.00`}</h4>
+          <h4>Thanks for your payment!</h4>
+          <p>You will see a Stripe receipt sent to your email regarding this transaction. Please allow up to 8-10 business days for the package to arrive. If you have any questions or concerns feel free to reach out to Drdyer@dentallasertrainingvideos.com</p>
           {this.props.children}
+          <h4 onClick={this.props.onClose}><i className="fa fa-times"></i>Close</h4>
         </div>
       </div>
     );    		
