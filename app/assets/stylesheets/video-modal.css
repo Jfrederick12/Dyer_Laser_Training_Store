@@ -30,4 +30,18 @@
 	background-color: transparent;
 }
 
+.modalbg {
+	position: fixed;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
 
+.payment-modal {
+	width: 100%;
+	background-color: white;
+	margin-top: 25%;
+	align-self: flex-start;
+	border-radius: 5;
+	padding: 30px;
+}

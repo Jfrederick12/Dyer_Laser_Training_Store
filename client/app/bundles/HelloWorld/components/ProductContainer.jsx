@@ -3,6 +3,7 @@ import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
 import React, { Component } from 'react';
 import VideoModal from './VideoModal';
+import PaymentModal from './PaymentModal';
 
 class ProductContainer extends Component {
 	constructor(props) {
@@ -10,14 +11,13 @@ class ProductContainer extends Component {
 		this.state = {
 			product: this.props.product,
 			token: '',
-			isOpen: false
+			isOpen: false,
+			paymentModalOpen: false
 		}
 		this.onToken = this.onToken.bind(this)
 	}
 
   onToken(token) {
-    console.log(token)
-    // console.log(JSON.stringify(token))
     this.state.token = (token.id)
 	    axios.post('/charges', {
 	      card: this.state.token,
@@ -25,6 +25,10 @@ class ProductContainer extends Component {
 	      description: this.state.product.name.tagline,
 	      email: token.email
 	    }) 
+	    .then((response) => {
+	    	console.log(response);
+	    	this.setState({ isOpen: !this.state.isOpen})
+    })
   }
 
   postToStripe() {
@@ -32,12 +36,19 @@ class ProductContainer extends Component {
       card: this.state.token,
       amount: this.state.product.chargeAmount,
       description: this.state.product.name.tagline
-    })  	
+    })  
+    .then((response) => {
+    	console.log(response);
+    })	
   }
 
   toggleModal() {
   	this.setState({ isOpen: !this.state.isOpen})
   }
+
+  togglePaymentModal() {
+  	this.setState({ paymentModalOpen: !this.state.paymentModalOpen})
+  }  
 
 	render() {
 		let videoLink = ''
@@ -70,7 +81,13 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
+						<button onClick={this.togglePaymentModal.bind(this)}>button</button>
+						<PaymentModal show={this.state.paymentModalOpen}
+							onClose={this.togglePaymentModal.bind(this)}
+						/>
+
 						{videoLink}
+
 						<VideoModal product={this.state.product} show={this.state.isOpen} 
 							onClose={this.toggleModal.bind(this)} 
 						/>

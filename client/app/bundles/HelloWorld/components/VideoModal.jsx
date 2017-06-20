@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import YoutubePlayer from 'react-youtube-player';
-// import {Modal} from 'react-bootstrap';
 
 class VideoModal extends Component {
 	constructor(props) {
