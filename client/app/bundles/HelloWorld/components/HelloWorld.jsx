@@ -79,7 +79,7 @@ export default class HelloWorld extends React.Component {
         amount: 350,
         description: ['DVD 1, Periodontal Laser Therapy', 'DVD 2, Low Level Laser Therapy', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Laser Therapy'],
         tagline: 'last-dvd',
-        video: 'K-hfJkLqMLg'
+        video: ''
       }        
     ]
     };

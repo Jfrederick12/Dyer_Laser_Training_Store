@@ -8,18 +8,15 @@ class About extends Component {
 				<div className="about-container">
 					<div>
 						<h4>The Benefits of Laser Dentistry</h4>
-						<p><i className="fa fa-quote-left fa-2x"></i>Incorporating laser dentistry into your practice guarantees some major benefits for both your office and your patients. The minimally invasive qualities and other attractive aspects will put your patients at ease and will boost your reputation, while adding to the efficiency of your office. Read on to learn the five key benefits of learning and offering laser dentistry.
-						</p>
+						<p><i className="fa fa-quote-left fa-2x"></i>Laser dentistry is minimally invasive, takes half the time of traditional scalpel surgery, and increases the rate of post op healing. Given that patients report experiencing little to no discomfort during or after surgery, laser dentistry is being sought out more now than ever, and quickly becoming an industry standard.</p>
 					</div>
 					<div>
-						<h4>Are Dental Lasers Reliable?</h4>
-						<p><i className="fa fa-quote-left fa-2x"></i>Because laser dentistry has only recently become more of a well-established practice, many wonder if lasers garner the same level of results as conventional methods. While using a laser isn’t necessarily always “better” in terms of long-term results, the immediate benefits outweigh many aspects of conventional surgery. The instant outcomes make it all worth the while.
-						</p>
+						<h4>Versatility of Diode Lasers </h4>
+						<p><i className="fa fa-quote-left fa-2x"></i>Dr. Dyer covers a variety of implementations for your diode laser, from improving chronic TMJ pain to deep pocket therapy to cosmetic surgery. By learning the procedures that allow you to take full advantage of laser dentistry, you’ll be given the tools to propel, and possibly even expand, your practice.</p>
 					</div>
 					<div>
-						<h4>Can Lasers Prevent Gum Disease?</h4>
-						<p><i className="fa fa-quote-left fa-2x"></i>Laser dentistry is the most effective tool for combatting and preventing gum disease to date. Lasers have the ability to clean and promote healing in a way that no other method provides. If you’re looking for better solutions for your patients who struggle with gum disease, you’ll want to read more to find out just how laser dentistry can change the course of their oral health.
-						</p>
+						<h4>Lasers and Gum Disease</h4>
+						<p><i className="fa fa-quote-left fa-2x"></i>Laser dentistry is the most effective tool for combatting and preventing gum disease to date, with the ability to clean and promote healing in a way that no other method provides. Along with regular professional dental cleanings, a laser can be used in the hygiene setting to prevent further progression of the disease.</p>
 					</div>				
 				</div>
 				< DoctorBanner />

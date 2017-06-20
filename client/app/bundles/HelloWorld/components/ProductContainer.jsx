@@ -40,6 +40,17 @@ class ProductContainer extends Component {
   }
 
 	render() {
+		let videoLink = ''
+
+		if (this.state.product.video !== '') {
+			videoLink = (
+				<a className="video-button" onClick={this.toggleModal.bind(this)}>
+				  <i className='fa fa-youtube-play fa-2x'></i>
+				  <p>Play Demo</p>
+			  </a>	
+			)
+		}
+
 		return(
 			<div className="product-content">
 				<div className="product-header">
@@ -59,11 +70,7 @@ class ProductContainer extends Component {
 	  			</ul>
 
 					<div className="product-links">
-
-						<a className="video-button" onClick={this.toggleModal.bind(this)}>
-						  <i className="fa fa-youtube-play fa-2x"></i>
-							<p>Play Demo</p>
-						</a>
+						{videoLink}
 						<VideoModal product={this.state.product} show={this.state.isOpen} 
 							onClose={this.toggleModal.bind(this)} 
 						/>
