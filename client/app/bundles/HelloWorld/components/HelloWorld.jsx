@@ -29,7 +29,8 @@ export default class HelloWorld extends React.Component {
         },
         description: ['Biologic basis for using diode lasers in periodontal therapy', 'Leveraging lasers for dental implants', 'Also accommodates orthodontic, restorative, and endodontic treatments, as well as oral surgery procedures and wound healing'],
         tagline: '',
-        chargeAmount: 9900,
+        // chargeAmount: 9900,
+        chargeAmount: 100,
         amount: 99,
         video: 'K-hfJkLqMLg'
       },
@@ -39,7 +40,8 @@ export default class HelloWorld extends React.Component {
           dvd: 'DVD 2',
           tagline: 'Low Level Laser Therapy'
         },
-        chargeAmount: 9900,
+        // chargeAmount: 9900,
+        chargeAmount: 100,
         amount: 99,
         description: ['Reduce pain and swelling', 'Analgesia and wound healing', 'Maintain dental implant health, and treat infections'],
         tagline: '',
@@ -51,7 +53,8 @@ export default class HelloWorld extends React.Component {
           dvd: 'DVD 3',
           tagline: 'Laser Crown Lengthening and Lip Lowering Surgery'
         },
-        chargeAmount: 9900,
+        // chargeAmount: 9900,
+        chargeAmount: 100,
         amount: 99,
         description: ['Cosmetic contouring of bone and soft tissue', 'Improve symmetry around new crowns and veneers', 'Lip lowering surgery'],
         tagline: '',
@@ -63,7 +66,8 @@ export default class HelloWorld extends React.Component {
           dvd: 'DVD 4',
           tagline: 'Periodontal Laser Therapy'
         },
-        chargeAmount: 14900,
+        // chargeAmount: 14900,
+        chargeAmount: 100,
         amount: 149,
         description: ['Laser new attachment procedure', 'Laser guided tissue regeneration'],
         tagline: '',
@@ -75,7 +79,8 @@ export default class HelloWorld extends React.Component {
           dvd: "",
           tagline: 'Complete Video Series (Save $100)'
         },
-        chargeAmount: 35000,
+        // chargeAmount: 35000,
+        chargeAmount: 100,
         amount: 350,
         description: ['DVD 1, Periodontal Laser Therapy', 'DVD 2, Low Level Laser Therapy', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Laser Therapy'],
         tagline: 'last-dvd',
