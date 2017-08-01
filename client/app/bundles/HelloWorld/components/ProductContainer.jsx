@@ -91,7 +91,7 @@ class ProductContainer extends Component {
 						<div className="checkout-button">	
 			        <StripeCheckout
 			          token={this.onToken}
-			          stripeKey="pk_test_nUc1YCiBaMGfk9uEkCx4Tyn8"
+			          stripeKey="pk_live_Lu9XdWoWA7HYg42HCn30Jc7J"
 			          description={this.state.product.name.dvd}
 			          panelLabel={`Pay $${this.state.product.amount + 15}.00`}
 			          shippingAddress
