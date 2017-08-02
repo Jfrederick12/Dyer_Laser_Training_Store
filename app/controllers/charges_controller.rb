@@ -8,7 +8,7 @@ class ChargesController < ApplicationController
     respond_to do |format|
       format.html
 	    @product_charge = ProductCharge.create(charge_params)
-	    p @product_charge
+
 			customer = Stripe::Customer.create(
 				:email => @product_charge.email,
 				#stripe token for the card id
@@ -17,14 +17,11 @@ class ChargesController < ApplicationController
 
 			charge = Stripe::Charge.create(
 				:customer => customer.id,
-				:amount => @product_charge.amount,
-				# :amount => @product_charge.amount.to_i + 1500,
+				:amount => @product_charge.amount.to_i + 1500,
 				:description => @product_charge.description,
 				:currency => 'usd',
 				:receipt_email => @product_charge.email
 			)
-
-			p charge
 
 			redirect_to '/'  		
     end
