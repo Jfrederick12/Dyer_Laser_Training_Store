@@ -25,25 +25,41 @@ export default class HelloWorld extends React.Component {
         id: 0,
         name: {
           dvd: 'DVD 1',
-          tagline: 'Periodontal Laser Therapy'
+          tagline: 'How to Use Your Diode Laser for Periodontal Therapy'
         },
-        description: ['Biologic basis for using diode lasers in periodontal therapy', 'Leveraging lasers for dental implants', 'Also accommodates orthodontic, restorative, and endodontic treatments, as well as oral surgery procedures and wound healing'],
+        description: 
+          [
+            'Biologic basis for using diode lasers in periodontal therapy',
+            'Consistent results with this protocol',
+            'Leveraging lasers for dental implants',
+            'Also accommodates orthodontic, restorative, and endodontic treatments, as well as oral surgery procedures and wound healing',
+            'Guidelines for when to use the diode for periodontal treatment and how to use',
+            'Periodontal therapy without shots!'
+          ],
         tagline: '',
         chargeAmount: 9900,
         amount: 99,
-        video: 'K-hfJkLqMLg'
+        video: 'mwzN91Xh4As'
       },
       {
         id: 1,
         name: {
           dvd: 'DVD 2',
-          tagline: 'Low Level Laser Therapy'
+          tagline: 'Low Level Laser Therapy, Soft Tissue Grafting & Management of Peri-implantitis'
         },
         chargeAmount: 9900,
         amount: 99,
-        description: ['Reduce pain and swelling', 'Analgesia and wound healing', 'Maintain dental implant health, and treat infections'],
+        description: 
+        [
+          'Reduce pain and swelling',
+          'Analgesia and wound healing',
+          'Maintain dental implant health, and treat infections',
+          'Accelerate healing of extractions and other surgeries with LLLT',
+          'Learn two different techniques for Soft Tissue Grafting',
+          'Learn how to prevent and manage infections around dental implants'
+        ],
         tagline: '',
-        video: 'ODOZRNPhVUY'
+        video: 'AUxCU2-lqLU'
       },
       {
         id: 2,
@@ -53,21 +69,35 @@ export default class HelloWorld extends React.Component {
         },
         chargeAmount: 9900,
         amount: 99,
-        description: ['Cosmetic contouring of bone and soft tissue', 'Improve symmetry around new crowns and veneers', 'Lip lowering surgery'],
+        description: 
+        [
+          'Cosmetic contouring of bone and soft tissue',
+          'Improve symmetry around new crowns and veneers',
+          'Lip lowering surgery',
+          'A step by step protocol for crown lengthening',
+          'Minimal surgical approach with consistent results',
+          'Your patients can see the result the same day',
+          'Little to no bleeding or swelling'
+        ],
         tagline: '',
-        video: 'HqbMkFG04IU'
+        video: 'oBY3kavnjgU'
       },    
       {
         id: 3,
         name: {
           dvd: 'DVD 4',
-          tagline: 'Periodontal Laser Therapy'
+          tagline: 'Periodontal Therapy with an Erbium Laser'
         },
         chargeAmount: 14900,
         amount: 149,
-        description: ['Laser new attachment procedure', 'Laser guided tissue regeneration'],
+        description: 
+        [
+          'Laser new attachment',
+          'Laser regeneration procedures',
+          'Minimally Invasive Surgery for deep pockets'
+        ],
         tagline: '',
-        video: 'HqbMkFG04IU'
+        video: '2cOr1UV6ytw'
       }, 
       {
         id: 4,
@@ -77,7 +107,7 @@ export default class HelloWorld extends React.Component {
         },
         chargeAmount: 35000,
         amount: 350,
-        description: ['DVD 1, Periodontal Laser Therapy', 'DVD 2, Low Level Laser Therapy', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Laser Therapy'],
+        description: ['DVD 1, How to Use Your Diode Laser for Periodontal Therapy', 'DVD 2, Low Level Laser Therapy, Soft Tissue Grafting & Management of Peri-implantitis', 'DVD 3, Laser Crown Lengthening & Lip Lowering Surgery', 'DVD 4, Periodontal Therapy with an Erbium Laser'],
         tagline: 'last-dvd',
         video: ''
       }        
